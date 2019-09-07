@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for title in data %}<div>
+ <p>Id : {{ title.Id}} Name : {{ title.Name}} Level : {{ title.Level}} Class : {{ title.Class}} SubClass : {{ title.SubClass}} VendorBuy : {{ title.VendorBuy}} VendorSell : {{ title.VendorSell}} MarketValue : {{ title.MarketValue}} MinBuyout : {{ title.MinBuyout}} Quantity : {{ title.Quantity}} NumAuctions : {{ title.NumAuctions}} HistoricalPrice : {{ title.HistoricalPrice}} RegionMarketAvg : {{ title.RegionMarketAvg}} RegionMinBuyoutAvg : {{ title.RegionMinBuyoutAvg}} RegionQuantity : {{ title.RegionQuantity}} RegionHistoricalPrice : {{ title.RegionHistoricalPrice}} RegionSaleAvg : {{ title.RegionSaleAvg}} RegionAvgDailySold : {{ title.RegionAvgDailySold}} RegionSaleRate
+ : {{ title.RegionSaleRate}} </p>
+ </div>
+{% endfor %}
+{% endblock %}
